@@ -1,0 +1,7 @@
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\EventTest\obj\Debug\EventTest.csprojAssemblyReference.cache
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\EventTest\obj\Debug\EventTest.csproj.CoreCompileInputs.cache
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\EventTest\bin\Debug\Event.exe.config
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\EventTest\bin\Debug\Event.exe
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\EventTest\bin\Debug\Event.pdb
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\EventTest\obj\Debug\Event.exe
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\EventTest\obj\Debug\Event.pdb

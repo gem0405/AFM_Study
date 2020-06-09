@@ -1,0 +1,10 @@
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\DelegateTest\bin\Debug\DelegateTest.exe.config
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\DelegateTest\bin\Debug\DelegateTest.exe
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\DelegateTest\bin\Debug\DelegateTest.pdb
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\DelegateTest\obj\Debug\DelegateTest.csprojAssemblyReference.cache
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\DelegateTest\obj\Debug\DelegateTest.Form1.resources
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\DelegateTest\obj\Debug\DelegateTest.Properties.Resources.resources
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\DelegateTest\obj\Debug\DelegateTest.csproj.GenerateResource.cache
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\DelegateTest\obj\Debug\DelegateTest.csproj.CoreCompileInputs.cache
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\DelegateTest\obj\Debug\DelegateTest.exe
+D:\work\國軍歷史文物館\軍史20200324\AFM_Imput\DelegateTest\obj\Debug\DelegateTest.pdb

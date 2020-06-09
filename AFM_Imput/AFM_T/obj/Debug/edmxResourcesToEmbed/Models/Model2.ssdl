@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AFMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AFM_CheckList">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Name="RowId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProductID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UnitPathId" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="CheckResult" Type="nvarchar" MaxLength="50" />
+    <Property Name="CheckMark" Type="nvarchar" MaxLength="200" />
+    <Property Name="InputDate" Type="datetime" />
+    <Property Name="CheckStatue" Type="nvarchar" MaxLength="20" />
+    <Property Name="CheckListStatue" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AFM_CheckMain">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Name="RowId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UnitPathId" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="CheckDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AFM_Notice">
+    <Key>
+      <PropertyRef Name="UpdateDate" />
+    </Key>
+    <Property Name="Content" Type="nvarchar(max)" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdateUserId" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AFM_Permission">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Name="RowId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PermissionId" Type="int" Nullable="false" />
+    <Property Name="PermissionName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AFM_Product">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Name="RowId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="UnitPathId" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Item" Type="nvarchar" MaxLength="50" />
+    <Property Name="Amount" Type="nvarchar" MaxLength="50" />
+    <Property Name="Size" Type="nvarchar" MaxLength="250" />
+    <Property Name="Kind" Type="nvarchar" MaxLength="50" />
+    <Property Name="OriginalHolder" Type="nvarchar" MaxLength="50" />
+    <Property Name="Worth" Type="nvarchar" MaxLength="50" />
+    <Property Name="Material" Type="nvarchar" MaxLength="50" />
+    <Property Name="ObjectTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="Maker" Type="nvarchar" MaxLength="250" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="Place" Type="nvarchar" MaxLength="50" />
+    <Property Name="ImageUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="250" />
+    <Property Name="Remark2" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateUserId" Type="nvarchar" MaxLength="200" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserId" Type="nvarchar" MaxLength="200" />
+    <Property Name="Cancel" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AFM_UNIT">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Name="RowId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentName" Type="nvarchar" MaxLength="250" />
+    <Property Name="ParentNoteId" Type="nvarchar" MaxLength="250" />
+    <Property Name="UnitName" Type="nvarchar" MaxLength="250" />
+    <Property Name="UnitPathId" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="ManagementUnit" Type="nvarchar" MaxLength="250" />
+    <Property Name="Location" Type="nvarchar" MaxLength="250" />
+    <Property Name="UnitAmount" Type="int" />
+    <Property Name="UnitMark" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateUserId" Type="nvarchar" MaxLength="200" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserId" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="AFM_USER">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Name="RowId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Account" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MyPhone" Type="nvarchar" MaxLength="500" />
+    <Property Name="CellPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="500" />
+    <Property Name="Title" Type="nchar" MaxLength="50" />
+    <Property Name="PermissionId" Type="int" Nullable="false" />
+    <Property Name="UnitPathId" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="IsActive" Type="int" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateUserId" Type="nvarchar" MaxLength="200" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateUserId" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityContainer Name="AFMModelStoreContainer">
+    <EntitySet Name="AFM_CheckList" EntityType="Self.AFM_CheckList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AFM_CheckMain" EntityType="Self.AFM_CheckMain" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AFM_Notice" EntityType="Self.AFM_Notice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AFM_Permission" EntityType="Self.AFM_Permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AFM_Product" EntityType="Self.AFM_Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AFM_UNIT" EntityType="Self.AFM_UNIT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AFM_USER" EntityType="Self.AFM_USER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

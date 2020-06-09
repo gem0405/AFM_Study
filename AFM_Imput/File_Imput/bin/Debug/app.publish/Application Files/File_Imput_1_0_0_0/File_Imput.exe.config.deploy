@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+    </startup>
+   <connectionStrings>
+    <!-- '*** 資料庫 連結字串*** -->
+    <add name="APM_Test"
+       connectionString="Data Source=.;Initial Catalog=APM_Test;Persist Security Info=True;User ID=sa;Password=~1qaz"
+       providerName="System.Data.SqlClient" />
+  </connectionStrings>
+</configuration>
